@@ -1,8 +1,6 @@
-<!-- [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=lebind12)](https://solved.ac/lebind12) -->
-
 
 <div align="center">
-  <strong>백준</strong>
+  <img src="./profile_image.gif">
   
   [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=lebind12)](https://solved.ac/lebind12)
 
