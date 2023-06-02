@@ -3,12 +3,12 @@
   <img src="./profile_image.gif">
   
   <br></br>
-  
   [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=lebind12)](https://solved.ac/lebind12)
-
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lebind12&layout=Demo&theme=radical)
-
+  <br></br>
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lebind12&layout=compact&theme=radical&size_weight=0.5&count_weight=0.5)
+  <br></br>
   ![K-Junyyy's GitHub stats](https://github-readme-stats.vercel.app/api?username=lebind12&show_icons=true&theme=radical)  
+
 
 </div>
 <!--
