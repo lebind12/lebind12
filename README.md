@@ -2,6 +2,8 @@
 <div align="center">
   <img src="./profile_image.gif">
   
+  <br></br>
+  
   [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=lebind12)](https://solved.ac/lebind12)
 
   ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lebind12&layout=Demo&theme=radical)
