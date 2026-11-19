@@ -21,8 +21,8 @@
 설계를 시작할 때는 **어떤 데이터를 읽고 어디에 쓸지**, **어떤 결과를 보고 완료로 판단할지**부터 정합니다. 배포 후에는 사용자가 받는 응답을 저장 기록과 대조합니다.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi,postgres,java,spring,aws&amp;theme=dark">
-  <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,java,spring,aws&amp;theme=light" width="299" height="44" alt="기술 스택: Python, FastAPI, PostgreSQL, Java, Spring, AWS">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cfastapi%2Cpostgres%2Cjava%2Cspring%2Caws&amp;theme=dark">
+  <img src="https://skillicons.dev/icons?i=py%2Cfastapi%2Cpostgres%2Cjava%2Cspring%2Caws&amp;theme=light" width="299" height="44" alt="기술 스택: Python, FastAPI, PostgreSQL, Java, Spring, AWS">
 </picture>
 
 LLM 파이프라인에는 LangGraph와 Vertex AI를 사용합니다.
@@ -44,8 +44,8 @@ LLM 파이프라인에는 LangGraph와 Vertex AI를 사용합니다.
 
 <a href="https://github.com/lebind12?tab=overview">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars,issues,contribs&amp;show_icons=true&amp;bg_color=10262A&amp;title_color=F4FBF6&amp;text_color=E3F1EA&amp;icon_color=81D3AD&amp;border_color=284448">
-    <img src="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars,issues,contribs&amp;show_icons=true&amp;bg_color=F1F7F4&amp;title_color=174A3F&amp;text_color=304943&amp;icon_color=286A59&amp;border_color=C4DDD2" width="304" alt="lebind12의 최근 공개 커밋과 PR 통계">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;bg_color=10262A&amp;title_color=F4FBF6&amp;text_color=E3F1EA&amp;icon_color=81D3AD&amp;border_color=284448">
+    <img src="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;bg_color=F1F7F4&amp;title_color=174A3F&amp;text_color=304943&amp;icon_color=286A59&amp;border_color=C4DDD2" width="304" alt="lebind12의 최근 공개 커밋과 PR 통계">
   </picture>
 </a>
 
