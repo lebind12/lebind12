@@ -1,42 +1,55 @@
-# 이우진
+<h1 align="center">이우진</h1>
 
-운영 데이터를 연결한 LLM 파이프라인을 설계하고, 배포 후 실제 서비스 응답을 검증하는 백엔드 개발자입니다.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Manrope&amp;weight=600&amp;size=23&amp;duration=1900&amp;pause=800&amp;color=9CDDBF&amp;center=true&amp;vCenter=true&amp;width=428&amp;height=42&amp;repeat=false&amp;lines=Backend+Engineer+%C2%B7+Applied+AI">
+    <img src="https://readme-typing-svg.demolab.com/?font=Manrope&amp;weight=600&amp;size=23&amp;duration=1900&amp;pause=800&amp;color=286A59&amp;center=true&amp;vCenter=true&amp;width=428&amp;height=42&amp;repeat=false&amp;lines=Backend+Engineer+%C2%B7+Applied+AI" width="428" height="42" alt="Backend Engineer · Applied AI">
+  </picture>
+</p>
 
-[![BenchMark 라이브 데모](https://img.shields.io/badge/BenchMark-%EB%9D%BC%EC%9D%B4%EB%B8%8C_%EB%8D%B0%EB%AA%A8-2457C5?style=flat-square)](https://benchmark-v3-steel.vercel.app)
-[![BenchMark 구현 문서](https://img.shields.io/badge/BenchMark-%EA%B5%AC%ED%98%84_%EB%AC%B8%EC%84%9C-334155?style=flat-square)](https://github.com/lebind12/benchmarkV3/blob/main/docs/portfolio/README.md)
-· [이메일](mailto:lebind12@naver.com)
+<p align="center"><strong>운영 데이터에 AI 기능을 연결하는 백엔드 개발자입니다.</strong></p>
 
-## BenchMark · AI 축구 경기 프리뷰
+<p align="center">
+  <a href="mailto:lebind12@naver.com"><img src="https://img.shields.io/badge/Email-22594D?style=for-the-badge" alt="이메일"></a>
+  <a href="https://solved.ac/u/lebind12"><img src="https://img.shields.io/badge/solved.ac-40565B?style=for-the-badge" alt="solved.ac 프로필"></a>
+</p>
 
-경기 기록과 외부 근거를 모아, 축구 팬이 경기 전에 주목 선수와 팀 전망을 한 화면에서 읽을 수 있게 했습니다. 관리자는 프리뷰에 쓰인 근거와 실행 이력을 확인할 수 있습니다. [프로젝트 저장소](https://github.com/lebind12/benchmarkV3)
+## 소개
 
-```mermaid
----
-config:
-  flowchart:
-    rankSpacing: 20
----
-flowchart TB
-    Inputs["경기·선수 기록과 외부 출처"] --> Generate["LangGraph · 근거 조사와 섹션 작성"]
-    Generate --> Store["PostgreSQL · 프리뷰 저장"]
-    Store --> Site["Vue · 공개 프리뷰"]
-```
+메트릭스튜디오에서 AWS Lambda, DynamoDB, OpenSearch, SQS를 사용하는 서버리스 백엔드에서 일했습니다. 이 경험을 바탕으로 기존 서비스에 AI를 연동하고, 도입부터 배포까지 책임지는 백엔드·FDE 역할에 관심을 두고 있습니다.
 
-### 설계에서 중요했던 결정
+설계를 시작할 때는 **어떤 데이터를 읽고 어디에 쓸지**, **어떤 결과를 보고 완료로 판단할지**부터 정합니다. 배포 후에는 사용자가 받는 응답을 저장 기록과 대조합니다.
 
-- **운영 데이터 쓰기 경계** · 프리뷰 생성은 운영 경기·선수 데이터를 읽고, 생성 결과와 실행 기록을 `preview_dev`에 저장합니다. [데이터와 저장 경계](https://github.com/lebind12/benchmarkV3/blob/main/docs/portfolio/deployment/README.md)
-- **근거 조사와 작성 분리** · LangGraph의 조사 단계에서 외부 출처를 수집하고, 작성 단계는 준비된 근거를 사용합니다. [생성 엔진](https://github.com/lebind12/benchmarkV3/blob/main/docs/portfolio/preview-generation/README.md)
-- **모델 호출 제어** · Vertex AI 전송 전에 예산을 확인하고 장부에 시도를 기록합니다. 전송 장부는 생성 결과의 저장 트랜잭션과 분리했습니다. [재시도와 전송 기록](https://github.com/lebind12/benchmarkV3/blob/main/docs/portfolio/vertex-ai/README.md)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi,postgres,java,spring,aws&amp;theme=dark">
+  <img src="https://skillicons.dev/icons?i=py,fastapi,postgres,java,spring,aws&amp;theme=light" width="299" height="44" alt="기술 스택: Python, FastAPI, PostgreSQL, Java, Spring, AWS">
+</picture>
 
-### 배포에서 확인한 것
+LLM 파이프라인에는 LangGraph와 Vertex AI를 사용합니다.
 
-초기 배포에서 런타임에 필요한 JSON Schema가 빠져 홈 추천 API가 HTTP 500을 반환했습니다. 파일을 포함해 재배포한 뒤 **두 경기의 공개 API 응답에서 섹션 결과 ID 10개를 검증한 저장 기록과 대조**했습니다. [배포 구조와 실패 이력](https://github.com/lebind12/benchmarkV3/blob/main/docs/portfolio/deployment/README.md) · [2026.11.19 검증 기록](https://github.com/lebind12/benchmarkV3/blob/87f5693cdf189b1e5eff73e93d8aca84f74d7cfb/docs/implementation/match-preview/preview-generation-release-2026-11-19.md)
+## 대표 프로젝트
 
-**제 역할** · 요구사항, 데이터 쓰기 경계, 섹션별 수용 기준을 정하고 배포 결과를 확인했습니다. 코드 구현과 독립 검토에 코딩 에이전트를 활용했습니다. [역할과 검증 기준](https://github.com/lebind12/benchmarkV3/blob/main/AGENTS.md)
+<a href="https://benchmark-v3-steel.vercel.app/">
+  <img src="./assets/benchmark-cover.webp" width="100%" alt="BenchMark 프로젝트 커버. 야간 축구 경기장 위 BenchMark 타이틀">
+</a>
 
-**기술** · FastAPI · LangGraph · Vertex AI · PostgreSQL · Vue · Koyeb · Vercel
+**BenchMark**는 경기 기록과 외부 근거를 모아 축구 팬에게 경기 전 프리뷰를 제공하는 개인 프로젝트입니다. 요구사항과 데이터 쓰기 경계를 정하고, 코딩 에이전트의 구현·검토 결과를 검증했습니다.
+
+- **설계** · 운영 경기 데이터를 읽고 생성 결과는 `preview_dev`에 따로 저장하도록 범위를 정했습니다.
+- **검증** · Vercel과 Koyeb에 배포한 뒤 두 경기의 공개 API 응답을 확인하고, 섹션 결과 ID 10개를 저장 기록과 대조했습니다. [배포 검증 기록](https://github.com/lebind12/benchmarkV3/blob/87f5693cdf189b1e5eff73e93d8aca84f74d7cfb/docs/implementation/match-preview/preview-generation-release-2026-11-19.md)
+
+[라이브 데모](https://benchmark-v3-steel.vercel.app/) · [소스 코드](https://github.com/lebind12/benchmarkV3) · [구현 문서](https://github.com/lebind12/benchmarkV3/tree/main/docs/portfolio)
+
+## GitHub 활동
+
+<a href="https://github.com/lebind12?tab=overview">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars,issues,contribs&amp;show_icons=true&amp;bg_color=10262A&amp;title_color=F4FBF6&amp;text_color=E3F1EA&amp;icon_color=81D3AD&amp;border_color=284448">
+    <img src="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars,issues,contribs&amp;show_icons=true&amp;bg_color=F1F7F4&amp;title_color=174A3F&amp;text_color=304943&amp;icon_color=286A59&amp;border_color=C4DDD2" width="304" alt="lebind12의 최근 공개 커밋과 PR 통계">
+  </picture>
+</a>
 
 ## 경력·교육
 
-- 메트릭스튜디오 백엔드 · 2021.09–2022.08 · AWS Lambda · DynamoDB · OpenSearch · SQS
+- 메트릭스튜디오 백엔드 · 2021.09–2022.08
 - SSAFY 13기 · K-Digital AI 데브코스 · 42 Seoul · 숭실대학교 컴퓨터학부
