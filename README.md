@@ -119,29 +119,17 @@
 ## GitHub 활동
 
 <p align="center">
-  <a href="https://github.com/lebind12?tab=overview">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;border_radius=14&amp;bg_color=10262A&amp;title_color=F4FBF6&amp;text_color=E3F1EA&amp;icon_color=81D3AD&amp;border_color=284448">
-      <img height="150" src="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;border_radius=14&amp;bg_color=F1F7F4&amp;title_color=174A3F&amp;text_color=304943&amp;icon_color=286A59&amp;border_color=C4DDD2" alt="lebind12의 공개 커밋과 PR 통계">
-    </picture>
-  </a>
+  <a href="https://github.com/lebind12?tab=overview"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;border_radius=14&amp;bg_color=10262A&amp;title_color=F4FBF6&amp;text_color=E3F1EA&amp;icon_color=81D3AD&amp;border_color=284448">
+    <img width="32%" src="https://github-readme-stats.vercel.app/api?username=lebind12&amp;hide_title=true&amp;hide_rank=true&amp;hide=stars%2Cissues%2Ccontribs&amp;show_icons=true&amp;disable_animations=true&amp;border_radius=14&amp;bg_color=F1F7F4&amp;title_color=174A3F&amp;text_color=304943&amp;icon_color=286A59&amp;border_color=C4DDD2" alt="공개 커밋과 PR 통계">
+  </picture></a>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=lebind12&amp;background=10262A&amp;border=284448&amp;stroke=284448&amp;ring=81D3AD&amp;fire=E8C872&amp;currStreakNum=F4FBF6&amp;sideNums=F4FBF6&amp;currStreakLabel=9CDDBF&amp;sideLabels=9DB8AE&amp;dates=6F8C84&amp;border_radius=14&amp;hide_border=false">
-    <img height="150" src="https://streak-stats.demolab.com/?user=lebind12&amp;background=F1F7F4&amp;border=C4DDD2&amp;stroke=C4DDD2&amp;ring=286A59&amp;fire=B8862B&amp;currStreakNum=174A3F&amp;sideNums=174A3F&amp;currStreakLabel=286A59&amp;sideLabels=304943&amp;dates=5B7A72&amp;border_radius=14" alt="연속 기여 기록">
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=lebind12&amp;background=10262A&amp;border=284448&amp;stroke=284448&amp;ring=81D3AD&amp;fire=E8C872&amp;currStreakNum=F4FBF6&amp;sideNums=F4FBF6&amp;currStreakLabel=9CDDBF&amp;sideLabels=9DB8AE&amp;dates=6F8C84&amp;border_radius=14">
+    <img width="32%" src="https://streak-stats.demolab.com/?user=lebind12&amp;background=F1F7F4&amp;border=C4DDD2&amp;stroke=C4DDD2&amp;ring=286A59&amp;fire=B8862B&amp;currStreakNum=174A3F&amp;sideNums=174A3F&amp;currStreakLabel=286A59&amp;sideLabels=304943&amp;dates=5B7A72&amp;border_radius=14" alt="연속 기여 기록">
   </picture>
-</p>
-
-<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=lebind12&amp;bg_color=10262A&amp;color=9DB8AE&amp;title_color=F4FBF6&amp;line=81D3AD&amp;point=E8C872&amp;area=true&amp;area_color=81D3AD&amp;hide_border=true&amp;radius=14">
-    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=lebind12&amp;bg_color=F1F7F4&amp;color=304943&amp;title_color=174A3F&amp;line=286A59&amp;point=B8862B&amp;area=true&amp;area_color=286A59&amp;hide_border=true&amp;radius=14" alt="기여 그래프">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lebind12/lebind12/output/github-snake-dark.svg">
-    <img width="100%" src="https://raw.githubusercontent.com/lebind12/lebind12/output/github-snake.svg" alt="기여 스네이크 애니메이션">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=lebind12&amp;bg_color=10262A&amp;color=9DB8AE&amp;title_color=F4FBF6&amp;line=81D3AD&amp;point=E8C872&amp;area=true&amp;area_color=81D3AD&amp;hide_border=false&amp;border_color=284448&amp;radius=14">
+    <img width="32%" src="https://github-readme-activity-graph.vercel.app/graph?username=lebind12&amp;bg_color=F1F7F4&amp;color=304943&amp;title_color=174A3F&amp;line=286A59&amp;point=B8862B&amp;area=true&amp;area_color=286A59&amp;hide_border=false&amp;border_color=C4DDD2&amp;radius=14" alt="기여 그래프">
   </picture>
 </p>
 
