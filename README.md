@@ -11,11 +11,15 @@
 경기 기록과 외부 근거를 모아, 축구 팬이 경기 전에 주목 선수와 팀 전망을 한 화면에서 읽을 수 있게 했습니다. 관리자는 프리뷰에 쓰인 근거와 실행 이력을 확인할 수 있습니다. [프로젝트 저장소](https://github.com/lebind12/benchmarkV3)
 
 ```mermaid
-flowchart LR
-    Match["경기·선수 기록"] --> Generate["LangGraph<br/>근거 조사 → 섹션 작성"]
-    Sources["외부 출처"] --> Generate
-    Generate --> Store["PostgreSQL<br/>프리뷰 저장"]
-    Store --> Site["Vue<br/>공개 프리뷰"]
+---
+config:
+  flowchart:
+    rankSpacing: 20
+---
+flowchart TB
+    Inputs["경기·선수 기록과 외부 출처"] --> Generate["LangGraph · 근거 조사와 섹션 작성"]
+    Generate --> Store["PostgreSQL · 프리뷰 저장"]
+    Store --> Site["Vue · 공개 프리뷰"]
 ```
 
 ### 설계에서 중요했던 결정
