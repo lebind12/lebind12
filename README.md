@@ -33,6 +33,10 @@
 | [JPA_Visualize](https://github.com/lebind12/JPA_Visualize) | N+1과 OSIV 사례의 SQL, 쿼리 수, 실행 시간 비교 | Spring Data JPA · MySQL · React · Testcontainers |
 | [Code Playground](https://github.com/lebind12/code-playground) | 알고리즘 풀이 게임의 개인 제출과 채점 큐 개발 중 | Django Channels · FastAPI · RabbitMQ |
 
+## 기술
+
+Java · Spring Boot · JPA / Python · FastAPI · Django / PostgreSQL · MySQL · Redis · RabbitMQ / Docker · k6 · Azure Bicep
+
 ## 경력·교육
 
 - 메트릭스튜디오 백엔드 · 2021.09–2022.08 · AWS Lambda · DynamoDB · OpenSearch · SQS
