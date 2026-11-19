@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-label="Vertex AI 호출 제어: 429 응답 뒤 60초와 300초 대기 후 세 번째 전송 성공, 전송마다 독립 장부 기록, 전송·HTTP 예산과 동시성 슬롯">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1D1A"/>
+      <stop offset="1" stop-color="#10262A"/>
+    </linearGradient>
+    <pattern id="stripe" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="10" fill="#E8C872" fill-opacity=".55"/>
+      <animateTransform attributeName="patternTransform" type="translate" additive="sum" from="0 0" to="10 0" dur="1s" repeatCount="indefinite"/>
+    </pattern>
+    <clipPath id="vclip"><rect width="1200" height="350" rx="22"/></clipPath>
+    <style>
+      .mono { font-family: SFMono-Regular, Consolas, Menlo, "Liberation Mono", monospace; }
+      .sans { font-family: "Manrope", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", sans-serif; }
+      .att { fill: #132E2F; stroke: #284448; stroke-width: 1.5; }
+      .a1 { animation: a1 10s linear infinite; } .a2 { animation: a2 10s linear infinite; } .a3 { animation: a3 10s linear infinite; }
+      @keyframes a1 { 0%, 12.0% { stroke: #81D3AD; fill: #1D5244; } 14.0%, 100% { stroke: #284448; fill: #132E2F; } }
+      @keyframes a2 { 0%, 33.0% { stroke: #284448; fill: #132E2F; } 35.0%, 48.0% { stroke: #81D3AD; fill: #1D5244; } 50.0%, 100% { stroke: #284448; fill: #132E2F; } }
+      @keyframes a3 { 0%, 80.0% { stroke: #284448; fill: #132E2F; } 82.0%, 100% { stroke: #81D3AD; fill: #1D5244; } }
+      .w60 { transform-box: fill-box; transform-origin: left; animation: w60 10s linear infinite; }
+      .w300 { transform-box: fill-box; transform-origin: left; animation: w300 10s linear infinite; }
+      @keyframes w60 { 0%, 19.5% { transform: scaleX(0); } 32.5%, 98% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      @keyframes w300 { 0%, 53.0% { transform: scaleX(0); } 80.0%, 98% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .lg1 { animation: lg1 10s linear infinite; } .lg2 { animation: lg2 10s linear infinite; } .lg3 { animation: lg3 10s linear infinite; }
+      @keyframes lg1 { 0% { opacity: 0; } 5.0%, 97% { opacity: 1; } 100% { opacity: 0; } }
+      @keyframes lg2 { 0%, 37.0% { opacity: 0; } 42.0%, 97% { opacity: 1; } 100% { opacity: 0; } }
+      @keyframes lg3 { 0%, 83.0% { opacity: 0; } 88.0%, 97% { opacity: 1; } 100% { opacity: 0; } }
+      .slot { animation: sl 2s ease-in-out infinite; } .s2 { animation-delay: 1s; }
+      @keyframes sl { 0%, 100% { fill: #132E2F; } 50% { fill: #81D3AD; } }
+    </style>
+  </defs>
+  <g clip-path="url(#vclip)">
+    <rect width="1200" height="350" fill="url(#vbg)"/>
+
+    <g class="sans">
+      <text x="40" y="54" font-size="22" font-weight="800" fill="#F4FBF6">Vertex AI 호출 제어</text>
+      <text x="246" y="54" font-size="14" fill="#6F8C84">SDK 재시도는 끄고(attempts=1) 어댑터가 대기·재전송·기록을 맡음</text>
+    </g>
+
+    <!-- timeline -->
+    <path d="M40 150 H780" stroke="#284448" stroke-width="2"/>
+    <g class="sans" font-size="14" font-weight="700">
+      <rect class="att a1" x="40" y="128" width="84" height="44" rx="10"/><text x="82" y="155" text-anchor="middle" fill="#E3F1EA">전송 #1</text>
+      <rect x="132" y="138" width="44" height="24" rx="12" fill="#3A1F1C" stroke="#F29A8A"/><text class="mono" x="154" y="155" text-anchor="middle" font-size="12" fill="#F29A8A">429</text>
+      <rect x="184" y="138" width="96" height="24" rx="12" fill="#10262A" stroke="#E8C872" stroke-opacity=".5"/>
+      <rect class="w60" x="184" y="138" width="96" height="24" rx="12" fill="url(#stripe)"/>
+      <text class="mono" x="232" y="186" text-anchor="middle" font-size="12" fill="#E8C872">60s 대기</text>
+
+      <rect class="att a2" x="288" y="128" width="84" height="44" rx="10"/><text x="330" y="155" text-anchor="middle" fill="#E3F1EA">전송 #2</text>
+      <rect x="380" y="138" width="44" height="24" rx="12" fill="#3A1F1C" stroke="#F29A8A"/><text class="mono" x="402" y="155" text-anchor="middle" font-size="12" fill="#F29A8A">429</text>
+      <rect x="432" y="138" width="200" height="24" rx="12" fill="#10262A" stroke="#E8C872" stroke-opacity=".5"/>
+      <rect class="w300" x="432" y="138" width="200" height="24" rx="12" fill="url(#stripe)"/>
+      <text class="mono" x="532" y="186" text-anchor="middle" font-size="12" fill="#E8C872">300s 대기</text>
+
+      <rect class="att a3" x="640" y="128" width="84" height="44" rx="10"/><text x="682" y="155" text-anchor="middle" fill="#E3F1EA">전송 #3</text>
+      <rect x="732" y="138" width="48" height="24" rx="12" fill="#14352B" stroke="#81D3AD"/><text class="mono" x="756" y="155" text-anchor="middle" font-size="12" fill="#81D3AD">200</text>
+    </g>
+    <g>
+      <rect x="-1" y="112" width="2" height="76" fill="#9CDDBF" opacity=".8"/>
+      <animateTransform attributeName="transform" type="translate" values="40 0;780 0" dur="10s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- ledger -->
+    <text class="mono" x="40" y="226" font-size="12" letter-spacing="2" fill="#E8C872">LEDGER · 독립 커밋</text>
+    <g class="mono" font-size="12.5">
+      <g class="lg1"><rect x="40" y="238" width="232" height="26" rx="7" fill="#1C1A10" stroke="#5A4E28"/><text x="52" y="256" fill="#C9BE97">attempt 1 · pending → 429</text></g>
+      <g class="lg2"><rect x="288" y="238" width="232" height="26" rx="7" fill="#1C1A10" stroke="#5A4E28"/><text x="300" y="256" fill="#C9BE97">attempt 2 · pending → 429</text></g>
+      <g class="lg3"><rect x="536" y="238" width="244" height="26" rx="7" fill="#12261E" stroke="#2F6B58"/><text x="548" y="256" fill="#9CDDBF">attempt 3 · pending → 200</text></g>
+    </g>
+    <text class="sans" x="40" y="300" font-size="13.5" fill="#9DB8AE">키: (run_id, logical_call_id, attempt_ordinal) · 장부를 못 쓰면 전송하지 않음</text>
+    <text class="sans" x="40" y="324" font-size="12.5" fill="#6F8C84">실제 관측 기록: 429 두 번 → 60초 · 300초 대기 → 세 번째 전송 성공</text>
+
+    <!-- budgets -->
+    <rect x="820" y="86" width="340" height="238" rx="16" fill="#132E2F" stroke="#284448"/>
+    <g class="sans">
+      <text x="842" y="118" font-size="13" font-weight="800" fill="#F4FBF6">모델 전송 예산</text>
+      <text x="1138" y="118" text-anchor="end" class="mono" font-size="11.5" fill="#6F8C84">논리 호출당</text>
+      <rect x="842" y="130" width="54" height="20" rx="6" fill="#81D3AD"/>
+      <rect x="902" y="130" width="54" height="20" rx="6" fill="#81D3AD"/>
+      <rect x="962" y="130" width="54" height="20" rx="6" fill="#81D3AD"/>
+      <rect x="1022" y="130" width="54" height="20" rx="6" fill="none" stroke="#F29A8A" stroke-dasharray="4 4"/>
+      <text class="mono" x="1084" y="145" font-size="11.5" fill="#F29A8A">+1 429</text>
+
+      <text x="842" y="186" font-size="13" font-weight="800" fill="#F4FBF6">HTTP 예산 30 / 실행</text>
+      <rect x="842" y="198" width="98" height="20" rx="6" fill="#8CC8E0" fill-opacity=".8"/>
+      <rect x="944" y="198" width="98" height="20" rx="6" fill="#E8C872" fill-opacity=".8"/>
+      <rect x="1046" y="198" width="92" height="20" rx="6" fill="#3F6460"/>
+      <text class="mono" x="891" y="234" text-anchor="middle" font-size="11" fill="#9DB8AE">기사 10</text>
+      <text class="mono" x="993" y="234" text-anchor="middle" font-size="11" fill="#9DB8AE">제공자 10</text>
+      <text class="mono" x="1092" y="234" text-anchor="middle" font-size="11" fill="#9DB8AE">공유 10</text>
+
+      <text x="842" y="274" font-size="13" font-weight="800" fill="#F4FBF6">동시성</text>
+      <rect class="slot" x="842" y="286" width="22" height="22" rx="5" stroke="#81D3AD"/>
+      <rect class="slot s2" x="870" y="286" width="22" height="22" rx="5" stroke="#81D3AD"/>
+      <text x="904" y="302" font-size="13" fill="#9DB8AE">실행당 슬롯 2 · 대기 중에도 점유</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="349" rx="22" fill="none" stroke="#284448"/>
+</svg>
