@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="경기 데이터가 검증된 프리뷰로 흐르는 장식 배너">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B1D1A"/>
+      <stop offset=".5" stop-color="#10262A"/>
+      <stop offset="1" stop-color="#0B1D1A"/>
+    </linearGradient>
+    <radialGradient id="sglow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#81D3AD" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#81D3AD" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sblur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="sclip"><rect width="1200" height="110" rx="18"/></clipPath>
+    <style>
+      .mono { font-family: SFMono-Regular, Consolas, Menlo, "Liberation Mono", monospace; }
+      .line { fill: none; stroke: #81D3AD; stroke-opacity: .25; stroke-width: 1.5; }
+      .draw { stroke-dasharray: 700; stroke-dashoffset: 700; animation: d 4s ease-out forwards; }
+      @keyframes d { to { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#sclip)">
+    <rect width="1200" height="110" fill="url(#sbg)"/>
+    <ellipse cx="600" cy="55" rx="260" ry="90" fill="url(#sglow)"/>
+    <path class="line draw" d="M600 0 V110"/>
+    <circle class="line draw" cx="600" cy="55" r="44"/>
+    <path class="line" d="M0 22 H1200 M0 88 H1200" stroke-opacity=".12"/>
+    <circle cx="600" cy="55" r="3.5" fill="#81D3AD" fill-opacity=".7"/>
+
+    <path id="sa" d="M60 80 C 300 80, 420 30, 600 55 S 900 30, 1140 34" fill="none"/>
+    <path id="sb" d="M60 30 C 280 30, 460 84, 600 55 S 940 84, 1140 76" fill="none"/>
+    <g fill="#9CDDBF">
+      <circle r="4"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#sa"/></animateMotion></circle>
+      <circle r="9" filter="url(#sblur)" opacity=".5"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#sa"/></animateMotion></circle>
+    </g>
+    <g fill="#E8C872">
+      <circle r="3.5"><animateMotion dur="5.5s" begin="1.5s" repeatCount="indefinite"><mpath href="#sb"/></animateMotion></circle>
+    </g>
+    <g fill="#8CC8E0">
+      <circle r="3.5"><animateMotion dur="4.5s" begin="2.6s" repeatCount="indefinite"><mpath href="#sa"/></animateMotion></circle>
+    </g>
+
+    <g class="mono" font-size="13" fill="#6F8C84">
+      <text x="40" y="60">fixtures · players · articles</text>
+      <text x="1160" y="60" text-anchor="end">→ verified preview</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="109" rx="18" fill="none" stroke="#284448"/>
+</svg>
